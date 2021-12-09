@@ -1,1 +1,2 @@
-# Unit 7
+# Testing with Jasmine
+Jasmine is a JS testing framework
