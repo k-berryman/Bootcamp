@@ -18,10 +18,10 @@ Springboard requested the source code to be in a private repo, so here it everyt
 
 ## Screenshots
 Here is a picture of the loading sequence
-![](pics/jeopardy3.png)
+![](jeopardy3.png)
 
 Here is a picture of the beginning of a game
-![](pics/jeopardy1.png)
+![](jeopardy1.png)
 
 Here is a picture of the middle of a game
-![](pics/jeopardy2.png)
+![](jeopardy2.png)
