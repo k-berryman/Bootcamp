@@ -22,8 +22,16 @@ console.log(extractValue(arr,'name')); // ['Elie', 'Tim', 'Matt', 'Colt']
 function vowelCount(str) {
   const vowels = "aeiou";
   return [...str].reduce(function(accumulator, next) {
-    str.toLowerCase();
-    
+    let lowercased = next.toLowerCase();
+
+    if(vowels.indexOf(lowercased) !== -1) {
+      if(accumulator[lowercased]) {
+        accumulator[lowercased]++;
+      } else {
+        accumulator[lowercased] = 1;
+      }
+    }
+    return accumulator;
   }, {});
 }
 
@@ -39,7 +47,10 @@ console.log(vowelCount('I Am awesome and so are you')); // {i: 1, a: 4, e: 3, o:
    and returns the array of objects passed to it with each object
    now including the key and value passed to the function. */
 function addKeyAndValue(arr, key, value) {
-
+  return arr.reduce(function(accumulator, next, index) {
+    accumulator[index][key] = value;
+    return accumulator;
+  }, arr);
 }
 
 // test addKeyAndValue()
@@ -61,7 +72,14 @@ console.log(addKeyAndValue(arr2, 'title', 'Instructor'));
    if the result of the callback function at that specific value is true, the value should be placed in the first subarray.
    If the result of the callback function at that specific value is false, the value should be placed in the second subarray.*/
 function partition(arr, callback) {
-
+  return arr.reduce(function(accumulator, next) {
+    if(callback(next)) {
+      accumulator[0].push(next);
+    } else {
+      accumulator[1].push(next);
+    }
+    return accumulator;
+  }, [ [], [] ])
 }
 
 // test partition()
