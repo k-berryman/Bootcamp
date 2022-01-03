@@ -108,3 +108,17 @@ POSTS = {
 def showPosts(id):
     post = POSTS.get(id, "Error -- no post here");
     return f"{post}"
+
+
+# Let's try multiple variables
+@app.route('/r/<subreddit>/comments/<int:postid>')
+def showCommends(subreddit, postid):
+    return f"<h1>Viewing comment {postid} from {subreddit}</h1>"
+
+# Distinction between route variables and query strings
+# Both pass in information to a get requests
+# URL Param/route variable is like the subject of the page .. feels required
+# URL Param/route variables aka /shop/<toy>
+# Query Params aka /shop?toy=spinneer
+# Query Params feels like extra info. Info often comes from a form...?
+
