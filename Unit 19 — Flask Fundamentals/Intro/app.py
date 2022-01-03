@@ -85,3 +85,26 @@ def saveComment():
         <h1>Your username -- {username}</h1>
         <h2>Your password -- {password}</h2
     """
+
+
+# At the moment, all our paths are hard-coded
+# We don't want all of those end-points.. let's look for patterns in the url
+# Wrapping the query string in <> turns it into a variable
+# It needs to be passed to the function too
+@app.route('/r/<subreddit>')
+def showSubreddit(subreddit):
+    return f"<h1>this is a subreddit for {subreddit}</h1>"
+
+
+POSTS = {
+  1: "I like coffee",
+  2: "Mayo is soft",
+  3: "I don't know what to write"
+}
+
+# Cast id to int. This forces the url to follow this format.
+# .get here provides a default error handle
+@app.route('/posts/<int:id>')
+def showPosts(id):
+    post = POSTS.get(id, "Error -- no post here");
+    return f"{post}"
