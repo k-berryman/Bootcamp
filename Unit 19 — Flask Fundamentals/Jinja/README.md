@@ -212,3 +212,88 @@ greet2.html
         </ul>
       {% endif %}
     </body>
+
+## Template Inheritance
+Shared content between pages such as headers, footers, styles, etc
+
+We don't want to keep duplicating this on each template. Let's have a parent/base template.
+
+This is the format
+
+    {% block BLOCKNAME %} ... {% endblock %}
+
+Sample parent template
+templates/base.html
+
+    <head>
+      <title>{% block title %}TITLE GOES HERE{% endblock %}</title>
+    </head>
+    <body>
+      <h1>Our Site</h1>
+      {% block content %}BODY CONTENT GOES HERE{% endblock %}
+    </body>
+
+Sample child template
+templates/exended-page.html
+
+    {% extends 'base.html' %}
+    
+    {% block title %} This page's title {% endblock %}
+
+    {% block content %} <h2>This page's content</h2> {% endblock %} 
+
+----
+templates/base.html
+
+    <head>
+      <title>{% block title %}{% endblock %}</title>
+    </head>
+       
+     <body>
+          <nav>
+            <a href="">Pretend navbar</a>
+          </nav>
+    
+      {% block content %}{% endblock %}
+    
+      <footer>Pretend footer</footer>
+    </body>
+
+refactored templates/greet2.html
+
+    {% extends 'base.html' %}
+    
+    {% block title %}Greet 2 Title{% endblock %}
+
+    {% block content %}
+      <h1>Hi there, {{username}}!</h1>
+    
+      {% if wants_compliments %}
+        <h3>Here's your compliments!</h3>
+        <ul>
+          {% for compliment in compliments %}
+            <li>You are {{compliment}}</li>
+          {% endfor %}
+        </ul>
+      {% endif %}
+    {% endblock %}
+
+refactored form2.html
+
+    {% extends 'base.html' %}
+    
+    {% block title %}Form 2 Title{% endblock %}
+    
+    {% block content %}
+    
+    <form action="/greet-2">
+      <input type="text" placeholder="Your Name" name="username">
+    
+      <label for="compliments">Do you want compliments?</label>
+      <input type="checkbox" id="compliments" name="wants_compliments">
+      <button>Submit</button>
+    </form>
+    
+    {% endblock %}
+
+
