@@ -28,7 +28,7 @@ function makeBoard() {
 }
 
 
-// makeHtmlBoard: make HTML table and row of column tops.
+// Make HTML table and row of column tops.
 function makeHtmlBoard() {
   // Create htmlBoard variable from the HTML item w/ID of "board"
   const htmlBoard = document.getElementById("board")
