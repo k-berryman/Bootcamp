@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet"
+        href="https://unpkg.com/bootstrap/dist/css/bootstrap.css">
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1 id="title">Movies App!</h1>
+
+    <div class="movie-title">
+      Movie Title
+      <input class="form-control" id="movie" type="text" min="0" max="255" value="Enter the movie name here!">
+    </div>
+
+    <div class="movie-rating">
+      Movie Rating
+      <input class="form-control" id="rating" type="number" min="0" max="10" value="5">
+    </div>
+  </div>
+
+  <button type="button" id="submit">Submit</button>
+
+  <div id="previous-entries"></div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+  <script src="movies.js"></script>
+</body>
+
+</html>
