@@ -31,12 +31,14 @@ class WordFinder:
 
 
 class SpecialWordFinder(WordFinder):
-    """docstring for ."""
+    """New requirements to filter out lines"""
 
     def __init__(self):
+        "Become a child of WordFinder"
         super().__init__()
 
     def filter(self):
+        "Filter out extra lines"
         for word in self.words:
             if word.startswith('#'):
                 self.words.remove(word)
