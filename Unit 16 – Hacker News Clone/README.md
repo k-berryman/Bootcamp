@@ -1,5 +1,3 @@
-AJAX with jQuery project – Hacker News clone
-
 # Hacker News Clone
 I'm including all sample tokens & usernames, because this is just a play/sample/fake app
 
@@ -9,12 +7,12 @@ A RESTful JSON API with users and stories. Reading stories and creating users do
 
 ----
 Sample GET request to get an array of stories
-![GET Request for stories](StoryReqGET.png)
+![GET Request for stories](Pics/StoryReqGET.png)
 
 ---
 Now, we sign up & get our token. 
 POST request to `/signup`
-![Sign Up POST Request](SignupPOST.png)
+![Sign Up POST Request](Pics/SignupPOST.png)
 
 This is our auth token!
 
@@ -29,7 +27,7 @@ In future requests, place the token in either...
 ---
 Let's create a new story
 We use our token to create a POST request to `/stories`
-![New Story POST Request](NewStoryPOST.png)
+![New Story POST Request](Pics/NewStoryPOST.png)
 
 ### INTRODUCTION
 
