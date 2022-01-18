@@ -12,6 +12,6 @@ A sample request - `axios.get(http://api.giphy.com/v1/gifs/search?q=puppies.valu
 
 ---
 
-![Dog Req](/pics/giphy1.png)
-![Cat Req](/pics/giphy2.png)
-![Gif Req](/pics/giphy3.png)
+![Dog Req](pics/giphy1.png)
+![Cat Req](pics/giphy2.png)
+![Gif Req](pics/giphy3.png)
