@@ -89,3 +89,10 @@ SELECT * FROM Galaxies;
 SELECT * FROM Planets;
 SELECT * FROM Orbits;
 SELECT * FROM Moons;
+
+-----------------------------------------------------------------
+
+SELECT (Planets.id, Planets.name, Orbits.oribitsAround, Orbits.orbitalPeriodInYears, Moons.name) FROM
+  Planets
+    INNER JOIN Orbits ON Orbits.orbitingPlanetID = Planets.id
+    INNER JOIN Moons ON Moons.planetID = Planets.id;
