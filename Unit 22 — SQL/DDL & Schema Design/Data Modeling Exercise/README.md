@@ -65,16 +65,36 @@ Think about how you could improve the schema. Finally, modify the files to match
 
  
 ### 1 - Outer Space
-Brainstormed Improvements -
 
-Updated file - 
+Currently, there's only one table - planets (with fields id, name, orbital_period_in_years, orbits_around, galaxy, and moons) 
+
+I suggest breaking this into 4 tables 
+ * Galaxies (with fields of id, name)
+ * Orbits (with fields of id, orbiting_Planet_ID, orbitsAround, oribital_period_in_years)
+ * Planets (with fields of id, name, galaxy_ID, orbits_ID)
+ * Moons (with fields of id, planet_ID)
+
+
+Updated file - [Outer Space DDL SQL File](./outer_space.sql)
 
 ### 2 - Air Traffic
-Brainstormed Improvements -
 
-Updated file - 
+Currently, there only one table - tickets (with fields id, first_name, last_name, seat, departure, arrival, airline, from_city, from_country, to_city, and to_country)
+
+I suggest breaking this into 2 tables 
+ * Flights (with fields of id, airline, departure, arrival, from_city, to_country)
+ * Tickets (with fields of id, first_name, last_name, seat, flight_ID)  
+
+Updated file - [Air Traffic DDL SQL File](./air_traffic.sql)
 
 ### 3 - Music
-Brainstormed Improvements -
 
-Updated file - 
+Currently, there only one table - songs (with fields id, title, duration_in_seconds, release_date, artists, album, and producers)
+
+I suggest breaking this into 2 tables 
+ * Artists (with fields of id, name)
+ * Producers (with fields of id, name)
+ * Albums (with fields of id, artist_ID, producer_ID, release_date)
+ * Songs (with fields of id, title, duration_in_seconds, album_ID)
+
+Updated file - [Music DDL SQL File](./music.sql)
