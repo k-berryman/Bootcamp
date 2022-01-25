@@ -13,8 +13,11 @@ Design the schema for a medical center
 - During a visit, a patient may be diagnosed to have one or more diseases
 
 Diagram - ![Medical Center Schema Diagram](./pics/medical_center_schema.png)
+
 DDL Operations - [Medical Center DDL SQL File](./medical_center.sql)
+
 Other Helpful Info -
+
 Potential Challenges -
 
 ### 2 - Craigslist
@@ -25,8 +28,11 @@ Design the schema for Craigslist. Keep track of the following
 - Categories that each post belongs to
 
 Diagram - ![Craigslist Schema Diagram](./pics/craigslistschema.png)
+
 DDL Operations - [Craigslist DDL SQL File](./craigslist.sql)
+
 Other Helpful Info -
+
 Potential Challenges -
 
 
@@ -42,7 +48,10 @@ Design the schema a sports league. Keep track of the following
 
 
 Diagram - ![Soccer League Schema Diagram](./pics/soccer_league_schema.png)
+
 DDL Operations - [Soccer League DDL SQL File](./soccer_league.sql)
+
 Other Helpful Info -
+
 Potential Challenges -
 
