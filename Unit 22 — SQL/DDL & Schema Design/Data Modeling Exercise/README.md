@@ -24,7 +24,7 @@ Design the schema for Craigslist. Keep track of the following
 - Posts: contains title, text, user who posted, location of posting, the region of the posting
 - Categories that each post belongs to
 
-Diagram - ![Craigslist Schema Diagram](./pics/craigslist_schema.png)
+Diagram - ![Craigslist Schema Diagram](./pics/craigslistschema.png)
 DDL Operations - [Craigslist DDL SQL File](./craigslist.sql)
 Other Helpful Info -
 Potential Challenges -
