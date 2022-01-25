@@ -55,3 +55,26 @@ Other Helpful Info -
 
 Potential Challenges -
 
+## Part 2 - Schema Critique
+Springboard provided several SQL files with populated database info. Run each seed file and examine the generated data.
+Think about how you could improve the schema. Finally, modify the files to match your updated schema.
+
+    psql < outer_space.sql
+    psql < air_traffic.sql
+    psql < music.sql
+
+ 
+### 1 - Outer Space
+Brainstormed Improvements -
+
+Updated file - 
+
+### 2 - Air Traffic
+Brainstormed Improvements -
+
+Updated file - 
+
+### 3 - Music
+Brainstormed Improvements -
+
+Updated file - 
