@@ -70,9 +70,9 @@ Currently, there's only one table - planets (with fields id, name, orbital_perio
 
 I suggest breaking this into 4 tables 
  * Galaxies (with fields of id, name)
+ * Planets (with fields of id, name, galaxy_ID)
  * Orbits (with fields of id, orbiting_Planet_ID, orbitsAround, oribital_period_in_years)
- * Planets (with fields of id, name, galaxy_ID, orbits_ID)
- * Moons (with fields of id, planet_ID)
+ * Moons (with fields of id, name, planet_ID)
 
 
 Updated file - [Outer Space DDL SQL File](./outer_space.sql)
