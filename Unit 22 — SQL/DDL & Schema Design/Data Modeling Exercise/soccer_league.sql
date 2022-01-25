@@ -203,3 +203,19 @@ SELECT * FROM Players;
 SELECT * FROM Rankings;
 SELECT * FROM Games;
 SELECT * FROM Goals;
+
+-------------------------------------------------------
+
+-- From Game 1, print all teams & Players
+SELECT (Teams.name, Players.name) FROM
+  Games
+    INNER JOIN Teams ON Games.team1ID = Teams.id OR Games.team2ID = Teams.id
+    INNER JOIN Players ON Players.teamID = Teams.id
+
+  WHERE Games.id = 1;
+
+SELECT * FROM
+  Games
+    INNER JOIN Teams as t1 ON Games.team1ID = t1.id
+    INNER JOIN Teams as t2 ON Games.team2Id = t2.id
+    INNER JOIN Players ON Players.teamId = t1.id OR Players.teamId = t2.id;
