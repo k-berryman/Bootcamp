@@ -159,3 +159,8 @@ SELECT * FROM Albums;
 SELECT * FROM Songs;
 
 ----------------------------------------------------
+
+SELECT (Albums.id, Albums.name, Albums.releaseDate, Producers.name) FROM
+  Albums
+    INNER JOIN ProducersOfAlbums ON Albums.id = ProducersOfAlbums.albumID
+    INNER JOIN Producers ON Producers.id = ProducersOfAlbums.producerID;
