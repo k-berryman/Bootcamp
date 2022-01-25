@@ -16,9 +16,9 @@ Diagram - ![Medical Center Schema Diagram](./pics/medical_center_schema.png)
 
 DDL Operations - [Medical Center DDL SQL File](./medical_center.sql)
 
-Other Helpful Info -
+Other Helpful Info - A patient's primary care provider, department hours/walk-in hours, frequency of patient visits, patient payment info, patient insurance info, treatment plan info
 
-Potential Challenges -
+Potential Challenges - Medical records are usually very sensitive information. We probably want a want to make this data safer.
 
 ### 2 - Craigslist
 Design the schema for Craigslist. Keep track of the following
@@ -31,9 +31,9 @@ Diagram - ![Craigslist Schema Diagram](./pics/craigslistschema.png)
 
 DDL Operations - [Craigslist DDL SQL File](./craigslist.sql)
 
-Other Helpful Info -
+Other Helpful Info - User Interests, User Likes
 
-Potential Challenges -
+Potential Challenges - Location tracking has both ethical and technical challenges
 
 
 ### 3 - Soccer League
@@ -51,9 +51,9 @@ Diagram - ![Soccer League Schema Diagram](./pics/soccer_league_schema.png)
 
 DDL Operations - [Soccer League DDL SQL File](./soccer_league.sql)
 
-Other Helpful Info -
+Other Helpful Info - Parent Volunteers, Snack Day Schedule, Game line-ups/schedule
 
-Potential Challenges -
+Potential Challenges - Connecting the Rankings table to the Goals table
 
 ## Part 2 - Schema Critique
 Springboard provided several SQL files with populated database info. Run each seed file and examine the generated data.
