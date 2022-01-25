@@ -58,3 +58,10 @@ VALUES
 
 SELECT * FROM Flights;
 SELECT * FROM Tickets;
+
+----------------------
+
+SELECT (Flights.airline, Tickets.seat) FROM
+  Flights
+    INNER JOIN Tickets ON Tickets.flightID = Flights.id;
+    
