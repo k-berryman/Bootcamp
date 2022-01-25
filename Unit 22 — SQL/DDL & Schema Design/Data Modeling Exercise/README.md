@@ -82,7 +82,7 @@ Updated file - [Outer Space DDL SQL File](./outer_space.sql)
 Currently, there only one table - tickets (with fields id, first_name, last_name, seat, departure, arrival, airline, from_city, from_country, to_city, and to_country)
 
 I suggest breaking this into 2 tables 
- * Flights (with fields of id, airline, departure, arrival, from_city, to_country)
+ * Flights (with fields of id, airline, departure, arrival, from_city, from_country, to_city, to_country)
  * Tickets (with fields of id, first_name, last_name, seat, flight_ID)  
 
 Updated file - [Air Traffic DDL SQL File](./air_traffic.sql)
