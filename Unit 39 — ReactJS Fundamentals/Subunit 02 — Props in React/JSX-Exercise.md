@@ -57,4 +57,4 @@ All Part 3 Files
 - [index3.js](./index3.js)
 - [Person.js](Person.js)
 
-![Output](./part3png)
+![Output](./part3.png)
