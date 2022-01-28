@@ -30,3 +30,17 @@ Complete the exercises in the Tutorials steps 6 and 7 in  [https://sqlzoo.net/](
 ![Problem 7](./SQLZooJoin7.png)
 ![Problem 8](./SQLZooJoin8.png)
 ![Problem 9](./SQLZooJoin9.png)
+
+### Tutorial 7 - More Join!
+![Problem 1](./SQLZooMoreJoin1.png)
+![Problem 2](./SQLZooMoreJoin2.png)
+![Problem 3](./SQLZooMoreJoin3.png)
+![Problem 4](./SQLZooMoreJoin4.png)
+![Problem 5](./SQLZooMoreJoin5.png)
+![Problem 6](./SQLZooMoreJoin6.png)
+![Problem 7](./SQLZooMoreJoin7.png)
+![Problem 8](./SQLZooMoreJoin8.png)
+![Problem 9](./SQLZooMoreJoin9.png)
+![Problem 7](./SQLZooMoreJoin10.png)
+![Problem 8](./SQLZooMoreJoin11.png)
+![Problem 9](./SQLZooMoreJoin12.png)
