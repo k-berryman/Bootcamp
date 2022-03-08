@@ -91,6 +91,6 @@ Submissions
     console.log(`I'm sorry, we're all out. We have ${arr.length-1} left.`);
 
 **Output**
-![ReactModuleExerciseOutput](./ReactModuleExerciseOutput)
+![ReactModuleExerciseOutput](./ReactModuleExerciseOutput.png)
 
 Run with `npm start`
