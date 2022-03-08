@@ -92,3 +92,5 @@ Submissions
 
 **Output**
 ![ReactModuleExerciseOutput](./ReactModuleExerciseOutput)
+
+Run with `npm start`
