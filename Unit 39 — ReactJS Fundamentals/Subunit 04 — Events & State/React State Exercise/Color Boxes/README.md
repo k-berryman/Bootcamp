@@ -73,3 +73,6 @@ There are opportunities to move some things into default properties:
 
 -   the list of possible colors for boxes
 -   the number of boxes (so it doesn’t always have to be 16!)
+
+![Output 1](./output1.png)
+![Output 2](./output2.png)
