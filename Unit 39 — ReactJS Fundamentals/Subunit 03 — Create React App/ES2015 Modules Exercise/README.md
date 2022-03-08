@@ -1,5 +1,5 @@
 # ES2015 Module Exercise
-## ReactJS - Create React App
+## ReactJS - Create React App - Kaitlin Berryman - Springboard
 
 This exercise gives you practice with ES2015-style import/export.
 
@@ -46,8 +46,7 @@ Log the message “Delicious! May I have another?”
 Remove the fruit from the array of fruits
 Log the message “I’m sorry, we’re all out. We have FRUITSLEFT left.”
 
-### Requirements
-Submissions
+### Submissions
 **src/helpers.js**
 
     // returns a randomly selected item from an array of items
@@ -91,6 +90,7 @@ Submissions
     console.log(`I'm sorry, we're all out. We have ${arr.length-1} left.`);
 
 **Output**
+
 ![ReactModuleExerciseOutput](./ReactModuleExerciseOutput.png)
 
 Run with `npm start`
