@@ -56,10 +56,10 @@ https://jasmine.github.io/api/edge/matchers.html
 Make code easier to test by seperating logic and UI updates into seperate functions
 Making more, smaller functions makes the code easier to read, test & debug
 
-![Loan Screen 1](/Pics/Calc1.png "Loan Screen 1")
+![Loan Screen 1](./Pics/Calc1.png "Loan Screen 1")
 
-![Loan Screen 2](/Pics/Calc2.png "Loan Screen 2")
+![Loan Screen 2](./Pics/Calc2.png "Loan Screen 2")
 
-![Test Screen](/Pics/Jasmine.png "Test Screen")
+![Test Screen](./Pics/Jasmine.png "Test Screen")
 
 
